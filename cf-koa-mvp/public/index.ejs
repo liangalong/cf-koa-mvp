@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <% cdnRetryScripts.forEach(script=> { %>
+        <script><%= script %></script>
+    <% }); %>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <title>Bitget-Trade smarter</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="root"></div>
+    <% libs.forEach(path=> { %>
+        <script defer="defer" src="<%= path %>"></script>
+    <% }); %>
+
+    <script id="__ZEUS_APP_FLAG__" type="application/json">{"isSSR": false}</script>
+    <script id="__ZEUS_REACT_QUERY_STATE__" type="application/json">{"mutations":[],"queries":[]}</script>
+    <script id="__ZEUS_INTL_CACHE__" type="application/json">{}</script>
+
+</body>
+
+</html>
